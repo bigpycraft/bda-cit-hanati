@@ -1,10 +1,10 @@
 
-<div align='center'><b><font size=6>Industry 4.0 의 중심, BigData</font></b></div>
+# Industry 4.0 의 중심, BigData
 
 <div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
 <hr>
 
-# Python PG Section 1
+## Python PG Section 1
 
 <div><font color='brown' size='3'><b>화면에 출력하기</b></font></div>
 
