@@ -1,10 +1,10 @@
 
-<div align='center'><b><font size=6>Industry 4.0 의 중심, BigData</font></b></div>
+# Industry 4.0 의 중심, BigData
 
 <div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
 <hr>
 
-# Python PG Section 2
+## Python PG Section 2
 
 ### <font color='brown'>조건문, if 
 
@@ -15,9 +15,6 @@ condition = True
 if condition:
     print("조건을 충족함, condition met")
 ```
-
-    조건을 충족함, condition met
-    
 
 
 ```python
@@ -36,9 +33,6 @@ else:
     print('숫자A와 숫자B는 같지않습니다.')
 ```
 
-    숫자A와 숫자B는 같지않습니다.
-    
-
 
 ```python
 x = 10
@@ -50,9 +44,6 @@ else:
     print('x가 y보다 작거나 같습니다.')
 
 ```
-
-    x가 y보다 작거나 같습니다.
-    
 
 
 ```python
@@ -67,9 +58,6 @@ elif x < y:
 else:
     print('x와 y가 같습니다.')
 ```
-
-    x가 y보다 작습니다.
-    
 
 
 ```python
@@ -94,9 +82,6 @@ if score < 60:
 print('시험의 결과는 ' + grade + '입니다.')
 ```
 
-    시험의 결과는 C입니다.
-    
-
 
 ```python
 score = 88
@@ -115,9 +100,6 @@ else:
 
 print('시험의 결과는 ' + grade + '입니다.')
 ```
-
-    시험의 결과는 B입니다.
-    
 
 
 ```python
@@ -139,9 +121,6 @@ else:
 print('시험의 결과는 ' + grade + '입니다.')
 ```
 
-    시험의 결과는 D입니다.
-    
-
 <font color='brown'>
 ### 순환문, for 
 
@@ -151,13 +130,6 @@ scope = [1, 2, 3, 4, 5]
 for x in scope:
     print(x)
 ```
-
-    1
-    2
-    3
-    4
-    5
-    
 
 
 ```python
@@ -169,11 +141,6 @@ for x in scope:
     else:
         break
 ```
-
-    1
-    2
-    3
-    
 
 
 ```python
@@ -191,15 +158,6 @@ for x in scope:
 print('End of PG')
 ```
 
-    1
-    Meet the continue
-    2
-    Meet the continue
-    3
-    Meet the break
-    End of PG
-    
-
 
 ```python
 scope = [1, 2, 3]
@@ -209,9 +167,6 @@ for x in scope:
 else:
     print('Perfect')
 ```
-
-    1
-    
 
 
 ```python
@@ -225,17 +180,6 @@ for x in range(3):
         print('next[%d][%d] : %d' % (x, y, next[x][y]))
 
 ```
-
-    next[0][0] : 1
-    next[0][1] : 2
-    next[0][2] : 3
-    next[1][0] : 4
-    next[1][1] : 5
-    next[1][2] : 6
-    next[2][0] : 7
-    next[2][1] : 8
-    next[2][2] : 9
-    
 
 <font color='brown'>
 ### 순환문, while
@@ -254,10 +198,6 @@ while 1:
     
 ```
 
-    447
-    100128
-    
-
 
 ```python
 x = 0
@@ -270,14 +210,6 @@ while x < 10:
         break
         
 ```
-
-    3
-    4
-    5
-    6
-    7
-    8
-    
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
