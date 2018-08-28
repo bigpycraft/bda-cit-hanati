@@ -1,34 +1,41 @@
 
-<div align='center'>
-<b><font size=6>Industry 4.0 의 중심, BigData</font></b>
-</div>
+# coding: utf-8
 
-<div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
-<hr>
+# <center>
+# <b><font size=6>Industry 4.0 의 중심, BigData</font></b>
+# </center>
 
-# Python PG Section 2
+# <center>
+# <h1>Industry 4.0 의 중심, BigData</h1>
+# </center>
 
-### <font color='brown'>조건문, if 
+# <div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
+# <hr>
+
+# # Python PG Section 2
+
+# <font color='brown'>
+# ### 조건문, if 
+
+# In[1]:
 
 
-```python
 condition = True
 
 if condition:
     print("조건을 충족함, condition met")
-```
-
-    조건을 충족함, condition met
-    
 
 
-```python
+# In[2]:
+
+
 if not condition:
     print("조건 충족 못함, condition not met")
-```
 
 
-```python
+# In[3]:
+
+
 num_a = 100
 num_b = 200
 
@@ -36,13 +43,11 @@ if num_a == num_b:
     print('숫자A와 숫자B는 같습니다.')
 else:
     print('숫자A와 숫자B는 같지않습니다.')
-```
-
-    숫자A와 숫자B는 같지않습니다.
-    
 
 
-```python
+# In[4]:
+
+
 x = 10
 y = 20
 
@@ -51,13 +56,10 @@ if x > y:
 else:
     print('x가 y보다 작거나 같습니다.')
 
-```
 
-    x가 y보다 작거나 같습니다.
-    
+# In[5]:
 
 
-```python
 # 010 if문 개념 배우기 ② (if~elif)
 x = 10
 y = 20
@@ -68,13 +70,11 @@ elif x < y:
     print('x가 y보다 작습니다.')
 else:
     print('x와 y가 같습니다.')
-```
-
-    x가 y보다 작습니다.
-    
 
 
-```python
+# In[6]:
+
+
 score = 75
 grade = ''
 
@@ -94,13 +94,11 @@ if score < 60:
     grade = 'F'
 
 print('시험의 결과는 ' + grade + '입니다.')
-```
-
-    시험의 결과는 C입니다.
-    
 
 
-```python
+# In[7]:
+
+
 score = 88
 grade = ''
 
@@ -116,13 +114,11 @@ else:
     grade = 'F'
 
 print('시험의 결과는 ' + grade + '입니다.')
-```
-
-    시험의 결과는 B입니다.
-    
 
 
-```python
+# In[8]:
+
+
 # 주의
 score = 95
 grade = ''
@@ -139,30 +135,22 @@ else:
     grade = 'F'
 
 print('시험의 결과는 ' + grade + '입니다.')
-```
-
-    시험의 결과는 D입니다.
-    
-
-<font color='brown'>
-### 순환문, for 
 
 
-```python
+# <font color='brown'>
+# ### 순환문, for 
+
+# In[9]:
+
+
 scope = [1, 2, 3, 4, 5]
 for x in scope:
     print(x)
-```
-
-    1
-    2
-    3
-    4
-    5
-    
 
 
-```python
+# In[10]:
+
+
 scope = [1, 2, 3, 4, 5]
 for x in scope:
     print(x)
@@ -170,15 +158,11 @@ for x in scope:
         continue
     else:
         break
-```
-
-    1
-    2
-    3
-    
 
 
-```python
+# In[11]:
+
+
 scope = [1, 2, 3, 4, 5]
 for x in scope:
     print(x)
@@ -191,32 +175,22 @@ for x in scope:
     print('End of for')
 
 print('End of PG')
-```
-
-    1
-    Meet the continue
-    2
-    Meet the continue
-    3
-    Meet the break
-    End of PG
-    
 
 
-```python
+# In[12]:
+
+
 scope = [1, 2, 3]
 for x in scope:
     print(x)
     break
 else:
     print('Perfect')
-```
-
-    1
-    
 
 
-```python
+# In[13]:
+
+
 #중첩 for문
 next = [[1, 2, 3],
         [4, 5, 6],
@@ -226,24 +200,13 @@ for x in range(3):
     for y in range(3):
         print('next[%d][%d] : %d' % (x, y, next[x][y]))
 
-```
 
-    next[0][0] : 1
-    next[0][1] : 2
-    next[0][2] : 3
-    next[1][0] : 4
-    next[1][1] : 5
-    next[1][2] : 6
-    next[2][0] : 7
-    next[2][1] : 8
-    next[2][2] : 9
-    
+# <font color='brown'>
+# ### 순환문, while
 
-<font color='brown'>
-### 순환문, while
+# In[14]:
 
 
-```python
 x = 1
 total = 0
 while 1:
@@ -254,14 +217,11 @@ while 1:
         break
     x = x + 1
     
-```
-
-    447
-    100128
-    
 
 
-```python
+# In[15]:
+
+
 x = 0
 while x < 10:
     x = x+1
@@ -271,16 +231,8 @@ while x < 10:
     if x > 7:
         break
         
-```
 
-    3
-    4
-    5
-    6
-    7
-    8
-    
 
-<hr>
-<marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
-<div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
+# <hr>
+# <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
+# <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>

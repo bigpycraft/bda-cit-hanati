@@ -1,19 +1,16 @@
 
-<center>
+<div align='center'>
 <b><font size=6>Industry 4.0 의 중심, BigData</font></b>
-</center>
+</div>
 
 <div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
 <hr>
 
-# Industry 4.0 의 중심, BigData
-
 # Python PG Section 1
 
-<font color='brown'>
-### 화면에 출력하기
+<div><font color='brown' size='3'><b>화면에 출력하기</b></font></div>
 
-* 문자 출력
+#### 문자 출력
 
 
 ```python
@@ -48,7 +45,7 @@ print('''
     
     
 
-* 숫자 출력
+#### 숫자 출력
 
 
 ```python
@@ -426,5 +423,7 @@ print(result)
     
 
 <hr>
+<div>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
+</div>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
