@@ -1,7 +1,5 @@
 
-<div align='center'>
-<b><font size=6>Industry 4.0 의 중심, BigData</font></b>
-</div>
+<div align='center'><b><font size=6>Industry 4.0 의 중심, BigData</font></b></div>
 
 <div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div>
 <hr>
