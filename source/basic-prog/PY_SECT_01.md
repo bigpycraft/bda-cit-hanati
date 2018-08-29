@@ -6,7 +6,12 @@
 
 ## Python 01. Basic Practice 
 
-### <font color='brown'>Sub Title</font>
+## <font color='brown'>Python Basic </font>
+> 
+- 표준 출력
+- 표준 입력
+
+### 문자 출력
 
 
 ```python
@@ -22,6 +27,8 @@ print("문자는 반드시 인용부호(\' \' 혹은 \" \")로 감싸야 합니�
     문자는 반드시 인용부호(' ' 혹은 " ")로 감싸야 합니다.
     
 
+* 숫자 출력
+
 
 ```python
 # 숫자 출력
@@ -34,6 +41,8 @@ print(150 - 200)
     350
     -50
     
+
+- 기본 연산
 
 
 ```python
