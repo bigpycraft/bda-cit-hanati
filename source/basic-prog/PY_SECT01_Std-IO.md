@@ -75,9 +75,10 @@ coffee3_name = '마끼야또';  coffee3_val = 5000;
 
 
 ```python
-# Case 1
+# Case 1 
 print('손님, ' + coffee1_name + coffee2_name + coffee3_name + '를 주문하셨습니다.')
 print('가격은 ' + coffee1_val + coffee2_val + coffee3_val + '원 입니다.')
+# TypeError 발생
 ```
 
 
@@ -135,7 +136,7 @@ print('%s %s잔을 주문하셨습니다. \n결재하실 금액은 %d원입니�
 ### 주석문
 > 
 - 한줄 주석 : 샵기호(#)로 시작하는 줄
-- N 열 주석 : 큰따옴표 3개로 감사는 줄
+- 블럭 주석 : 큰따옴표 3개로 감사는 줄
 
 
 ```python
@@ -159,18 +160,15 @@ print(b)
 
 
 ```python
-"""
-한줄주석문은 슬래쉬,
-멀티라인의 주석문은 따옴표 3개
-"""
+# Comment, 한줄주석과 블럭주석
 
-multiline_text = """
-이것은 블럭 코멘트입니다.
-그래서 여러 줄의 주석을
-이렇게 달 수 있습니다.
-큰따옴표 3개를 연속으로 적으면 됩니다.
 """
-print(multiline_text)
+블럭주석, 
+즉 멀티라인의 주석문은 따옴표(''' ''') 3개
+"""
+# 한줄주석문은 샵(#)기호
+
+pass
 ```
 
 ### Turtle Exam
@@ -228,8 +226,11 @@ turtle.forward(200)
 turtle.left(90)
 turtle.forward(200)
 
-# turtle.done()
+turtle.done()
+```
 
+
+```python
 # 삼각형 그리기
 input('엔터를 치면 빨간색 삼각형을 그립니다.')
 
@@ -244,8 +245,11 @@ turtle.forward(300)
 turtle.left(120)
 turtle.forward(300)
 
-# turtle.done()
+turtle.done()
+```
 
+
+```python
 # 원그리기
 input('엔터를 치면 파란색 굵은 원을 그립니다.')
 
@@ -254,7 +258,6 @@ turtle.color("blue")
 turtle.circle(200)
 
 turtle.done()
-
 ```
 
 
