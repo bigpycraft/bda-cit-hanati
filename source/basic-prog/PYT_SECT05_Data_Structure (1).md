@@ -15,7 +15,7 @@
 
 ### 리스트형, List
 
-#### 리스트형 선언 및 색인
+#### 리스트형 선언 및 인덱싱
 
 
 ```python
@@ -28,11 +28,6 @@ print('타입 :', type(bts_members))
 print('크기 :', len(bts_members))
 ```
 
-    멤버 : ['RM', '슈가', '진', '제이홉', '지민', '뷔', '정국']
-    타입 : <class 'list'>
-    크기 : 7
-    
-
 
 ```python
 print('리스트멤버 호출')
@@ -42,13 +37,6 @@ print(bts_members[2])
 print(bts_members[3])
 ```
 
-    리스트멤버 호출
-    RM
-    슈가
-    진
-    제이홉
-    
-
 
 ```python
 print('리스트멤버 호출(역순)')
@@ -57,13 +45,6 @@ print(bts_members[-2])
 print(bts_members[-3])
 print(bts_members[-4])
 ```
-
-    리스트멤버 호출(역순)
-    정국
-    뷔
-    지민
-    제이홉
-    
 
 #### 리스트형 추가/삭제
 
@@ -86,13 +67,6 @@ print('pop   \t:', sistar_members, end=' ---> ')
 print(pickup)
 
 ```
-
-    씨스타 	: ['효린', '소유']
-    append 	: ['효린', '소유', '다솜']
-    insert 	: ['효린', '보라', '소유', '다솜']
-    remove 	: ['효린', '보라', '다솜']
-    pop   	: ['보라', '다솜'] ---> 효린
-    
 
 #### 리스트 슬라이싱
 
@@ -122,17 +96,7 @@ print('rainbow[::-1]:', result)
 
 ```
 
-    
-    무지개색깔 	 : ['빨강', '주황', '노랑', '초록', '파랑', '남색', '보라']
-    rainbow[2:5] : ['노랑', '초록', '파랑']
-    rainbow[ :3] : ['빨강', '주황', '노랑']
-    rainbow[ : ] : ['빨강', '주황', '노랑', '초록', '파랑', '남색', '보라']
-    rainbow[::2] : ['빨강', '노랑', '파랑', '보라']
-    rainbow[-3:] : ['파랑', '남색', '보라']
-    rainbow[::-1]: ['보라', '남색', '파랑', '초록', '노랑', '주황', '빨강']
-    
-
-#### 리스트 인덱싱
+#### 리스트 응용
 
 
 ```python
@@ -193,16 +157,163 @@ print('city[1][1]:', city[1][1])
 print('city[2][0]:', city[2][0])
 ```
 
-    city      : [['서울', '도쿄', '베이징'], ['런던', '파리', '로마'], ['워싱턴', '시카고', '잭슨빌']]
-    city[0]   : ['서울', '도쿄', '베이징']
-    city[1]   : ['런던', '파리', '로마']
-    city[-1]  : ['워싱턴', '시카고', '잭슨빌']
-    city[0][0]: 서울
-    city[0][1]: 도쿄
-    city[0][2]: 베이징
-    city[1][1]: 파리
-    city[2][0]: 워싱턴
-    
+### 튜플형, Tuple
+
+#### 튜플형 선언 및 인덱싱
+
+
+```python
+#튜플 생성(튜플형, tuple type)
+girl_group = ('트와이스', '레드벨벳', '에이핑크', '걸스데이', '우주소녀')
+
+print('girl_group    \t: ', girl_group)
+print('girl_group[:2] \t: ', girl_group[:2])
+print('girl_group[-2:] : ', girl_group[-2:])
+```
+
+#### 튜플형 변경
+
+
+```python
+# 튜플값 변경 시도, TypeError 발생
+girl_group[2] = '블랙핑크'
+```
+
+
+```python
+girl_group = list(girl_group)
+girl_group[2] = '블랙핑크'
+girl_group = tuple(girl_group)
+print('girl_group   \t: ', girl_group)
+```
+
+#### 튜플형 응용
+
+
+```python
+width  = 20
+height = 30
+area = width * height
+
+print('너비 :', width);  
+print('높이 :', height);
+print('넓이 :', area)
+
+```
+
+
+```python
+data   = (15, 50)
+width, height = data
+area = width * height
+
+print('너비 :', width);  
+print('높이 :', height);
+print('넓이 :', area)
+
+```
+
+### 세트형, Set
+
+#### 세트형 생성
+
+
+```python
+#세트형 생성
+lang = {'Java', 'Java', 'Python', 'C++', 'Python'}
+print(lang)
+print(type(lang))
+print('Python'in lang)
+print('Javascript'in lang)
+
+```
+
+#### 세트형 집합 연산자
+
+
+```python
+# 세트형 집합 연산자
+a = set('abracadabra')
+b = set('alacazam')
+
+print('집합 a =', a);  print('집합 b =', b);
+print('합집합, a | b =', a | b)
+print('교집합, a & b =', a & b)
+print('차집합, a - b =', a - b)
+print('여집합, a ^ b =', a ^ b)
+
+```
+
+#### 중복 제거 및 정렬
+
+
+```python
+# 중복 제거 및 정렬
+beast = ["lion", "tiger", "wolf", "tiger", "lion", "bear", "lion" ]
+print('beast =', beast)
+
+unique_beast = list(set(beast))
+print('unique_beast =', unique_beast)
+sorted_beast = sorted(unique_beast)
+print("sorted_beast =", sorted_beast)
+
+```
+
+### 사전형, Dict
+
+#### 사전형 생성
+
+
+```python
+# 사전형 생성
+bans = { '잎새반':'찬영이',
+         '열매반':'예영이',
+         '햇살반':'준영이',
+         '열매반':'채영이', }
+
+print(type(bans))
+print('반의수 : ', len(bans))
+
+# 읽기
+print('잎새반 : ', bans['잎새반'])
+print('열매반 : ', bans['열매반'])
+print('bans 읽기 :', bans)
+
+# 추가
+bans['꽃잎반'] = '희영이'
+print('bans 추가 :', bans)
+
+# 변경
+bans['잎새반'] = '서영이'
+print('bans 변경 :', bans)
+
+# 삭제
+del bans['햇살반']
+print('bans 삭제 :', bans)
+
+```
+
+#### 사전형 함수
+
+
+```python
+customer = {
+    "name"    : "김진수",
+    'gender'  : '남자',
+    "email"   : "bigpycraft@gmail.com",
+    "company" : "빅파이크래프트",
+    "address" : "서울시 중구 청파로"
+}
+
+print('customer.keys()   \t= ', customer.keys())
+print('customer.values() \t= ', customer.values())
+print('customer.items()  \t= ', customer.items())
+print('-'*50)
+
+for key, value in customer.items():
+    print('%s\t : %s' %(key, value))
+
+```
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
